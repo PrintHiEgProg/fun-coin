@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Продажа компьютеров, ноутбуков, аксессуаров.">
+    <meta name="keywords" content="компьютеры, ноутбуки, продажа, техника, купить компьютер">
+    <meta name="author" content="Ваша Компания">
+    <title>Наши продукты</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page">
+    <div id="header"></div>
+
+    <script>
+        fetch('../header/header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header').innerHTML = data;
+            });
+    </script>
+
+    <section class="products">
+        <h2 class="products__title">Наши проекты</h2>
+        <div class="products__list">
+            
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p class="footer__text">© 2025 Магазин Компьютеров | Все права защищены</p>
+    </footer>
+
+    <!-- Подключаем JavaScript -->
+    <script src="products.js"></script>
+</body>
+
+</html>

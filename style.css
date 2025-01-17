@@ -1,0 +1,408 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.page {
+    font-family: 'Arial', sans-serif;
+    margin-top: 30px;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.header {
+    width: 100%;
+    background-color: #17171b;
+    padding: 20px 0;
+    text-align: center;
+    position: fixed;
+    top: 0;
+}
+
+.header__logo {
+    margin: 0;
+}
+
+.header__title {
+    font-size: 2em;
+    color: #ff9633;
+}
+
+.nav__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.nav__item {
+    margin: 10px 15px;
+}
+
+.nav__link {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav__link:hover {
+    color: #ff9633;
+}
+
+/* Стили для главной страницы */
+.banner {
+    color: #ffffff;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.banner__title {
+    font-size: 2.5em;
+    margin: 0;
+    color: #ff9633;
+}
+
+.banner__text {
+    font-size: 1.2em;
+}
+
+/* Стили для страницы продуктов */
+.products {
+    padding: 20px;
+    background-color: #17171b;
+    margin-bottom: 10vh;
+}
+
+.products__title {
+    text-align: center;
+    font-size: 2em;
+    color: #ff9633;
+    margin-bottom: 20px;
+}
+
+.products__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.product-card {
+    background: #3a3a5a;
+    border: 1px solid #444;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.product-card__image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.product-card__title {
+    font-size: 1.5em;
+    margin: 10px 0;
+    color: #ffffff;
+}
+
+.product-card__description {
+    font-size: 1em;
+    color: #ddd;
+    margin-bottom: 1vh;
+}
+
+.product-card__link {
+    display: inline-block;
+    background-color: #ff9633;
+    color: #1e1e2f;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.product-card__link:hover {
+    background-color: #cb7b31;
+}
+
+/* Стили для страницы "О нас" */
+.about {
+    margin-top: 15vh;
+    padding: 20px;
+    text-align: center;
+    background-color: #17171b;
+}
+
+.about__title {
+    font-size: 2em;
+    color: #ff9633;
+}
+
+.about__text {
+    font-size: 1.2em;
+}
+
+.about__map {
+    height: 450px;
+    width: 550px;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+
+/* Стили для страницы "Контакты" */
+.contact {
+    padding: 20px;
+    text-align: center;
+    background-color: #3a3a5a;
+}
+
+.contact__title {
+    font-size: 2em;
+    color: #ff9633;
+}
+
+.contact__form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.contact__form-title {
+    font-size: 1.5em;
+    color: #ff9633;
+}
+
+.form__label {
+    display: block;
+    margin: 10px 0 5px;
+    color: #ff9633;
+}
+
+.form__input, .form__textarea {
+    font-size: 20px;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    background-color: #17171b;
+    color: #ffffff;
+}
+
+.form__button {
+    background-color: #ff9633;
+    color: #1e1e2f;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form__button:hover {
+    background-color: #cb7b31;
+}
+
+/* Стили для страницы товара */
+.product-detail {
+    padding: 20px;
+    text-align: center;
+    background-color: #17171b;
+}
+
+.product-detail__content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.product-detail__image {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.product-detail__title {
+    font-size: 2em;
+    color: #ff9633;
+    margin: 20px 0;
+}
+
+.product-detail__description {
+    font-size: 1.2em;
+    color: #ddd;
+}
+
+.product-detail__price {
+    font-size: 1.5em;
+    color: #ff9633;
+    margin: 20px 0;
+}
+
+.product-detail__link {
+    display: inline-block;
+    background-color: #ff9633;
+    color: #1e1e2f;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.product-detail__link:hover {
+    background-color: #cb7b31;
+}
+
+.product-detail__error {
+    font-size: 1.5em;
+    color: #ff5555;
+}
+
+/* Стили для футера */
+.footer {
+    background-color: #17171b;
+    color: #ffffff;
+    width: 100vw;
+    height: 40px;
+    margin-top: 20vh;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+}
+
+.footer__text {
+    margin: auto;
+}
+
+/* Адаптивные стили */
+@media (max-width: 768px) {
+    .products__list {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    .about__map {
+        width: 90%;
+        height: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .products__list {
+        grid-template-columns: 1fr;
+    }
+
+    .about__map {
+        height: 250px;
+    }
+
+    .banner__title {
+        font-size: 2em;
+    }
+
+    .banner__text {
+        font-size: 1em;
+    }
+
+    .nav__list {
+        flex-direction: column;
+    }
+
+    .nav__item {
+        margin: 10px 0;
+    }
+}
+
+/* Стили для страницы товара */
+.product-detail {
+    padding: 20px;
+    text-align: center;
+    background-color: #17171b;
+}
+
+.product-detail__content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.product-detail__image {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.product-detail__title {
+    font-size: 2em;
+    color: #ff9633;
+    margin: 20px 0;
+}
+
+.product-detail__description {
+    font-size: 1.2em;
+    color: #ddd;
+}
+
+.product-detail__price {
+    font-size: 1.5em;
+    color: #ff9633;
+    margin: 20px 0;
+}
+
+.product-detail__specs-title {
+    font-size: 1.5em;
+    color: #ff9633;
+    margin: 20px 0 10px;
+}
+
+.product-detail__specs-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+.product-detail__specs-list li {
+    font-size: 1.1em;
+    color: #ddd;
+    margin: 10px 0;
+}
+
+.product-detail__specs-list li strong {
+    color: #ff9633;
+}
+
+.product-detail__link {
+    display: inline-block;
+    background-color: #ff9633;
+    color: #1e1e2f;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+.product-detail__link:hover {
+    background-color: #cb7b31;
+}
+
+.product-detail__error {
+    font-size: 1.5em;
+    color: #ff5555;
+}

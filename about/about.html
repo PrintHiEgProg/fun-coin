@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Информация о компании.">
+    <meta name="keywords" content="компьютеры, ноутбуки, продажа, техника, купить компьютер">
+    <meta name="author" content="Ваша Компания">
+    <title>О нас</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page">
+    <div id="header"></div>
+
+    <script>
+        fetch('../header/header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header').innerHTML = data;
+            });
+    </script>
+
+    <section class="about">
+        <h2 class="about__title">О нас</h2>
+        <p class="about__text">Мы реально шарим в этой теме! Приходите к нам!</p>
+        <p class="about__text">Наш офис находится по адресу: г. Ростов-на-Дону, пр. Буденновский, 80</p>
+        <div id="map" class="about__map"></div>
+    </section>
+
+    <footer class="footer">
+        <p class="footer__text">© 2025 Магазин Компьютеров | Все права защищены</p>
+    </footer>
+
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script>
+        // Инициализация карты
+        var map = L.map('map').setView([47.232805, 39.702436], 13);  // Центр карты (Москва)
+
+        // Добавление OpenStreetMap слоя
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(map);
+
+        // Добавление маркера на карту
+        L.marker([47.232805, 39.702436]).addTo(map)
+            .bindPopup("Мы находимся здесь!")
+            .openPopup();
+    </script>
+</body>
+
+</html>

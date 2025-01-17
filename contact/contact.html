@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Свяжитесь с нами.">
+    <meta name="keywords" content="компьютеры, ноутбуки, продажа, техника, купить компьютер">
+    <meta name="author" content="Ваша Компания">
+    <title>Контакты</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page">
+    <div id="header"></div>
+
+    <script>
+        fetch('../header/header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header').innerHTML = data;
+            });
+    </script>
+
+    <section class="contact">
+        <h2 class="contact__title">Контакты</h2>
+        <div class="contact__form">
+            <h3 class="contact__form-title">Форма обратной связи</h3>
+            <form action="https://formspree.io/f/xrbbvgdq" method="POST" class="form">
+                <label for="name" class="form__label">Ваше имя:</label>
+                <input type="text" id="name" name="name" class="form__input" required>
+
+                <label for="email" class="form__label">Ваш email:</label>
+                <input type="email" id="email" name="email" class="form__input" required>
+
+                <label for="message" class="form__label">Ваше сообщение:</label>
+                <textarea id="message" name="message" class="form__textarea" required></textarea>
+
+                <button type="submit" class="form__button">Отправить</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p class="footer__text">© 2025 Магазин Компьютеров | Все права защищены</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

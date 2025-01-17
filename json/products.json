@@ -1,0 +1,24 @@
+[
+  {
+    "id": 1,
+    "name": "perfect girl <3",
+    "image": "../images/perfect-girl.jpeg",
+    "description": "Живое общение с милой AI-Девушкой",
+    "link": "https://t.me/my_virtual_girlfriendBot?start=true"
+    
+  },
+  {
+    "id": 2,
+    "name": "Scrooge Coin",
+    "image": "../images/scrooge-coin.jpeg",
+    "description": "Новый вид майнинга криптовалюты - нажатием по экрану",
+    "link": "https://t.me/scrooge_coinBot?start=true"
+  },
+  {
+    "id": 3,
+    "name": "Scrooge Work",
+    "image": "../images/scrooge-work.jpg",
+    "description": "Трудоустройство в направление проектов Scrooge",
+    "link": "http://scrooge-work.tilda.ws"
+  }
+]
