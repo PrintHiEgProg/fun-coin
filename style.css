@@ -74,6 +74,7 @@
 .products {
     padding: 20px;
     background-color: #17171b;
+    margin-top: 5vh;
     margin-bottom: 10vh;
 }
 
@@ -140,7 +141,7 @@
 
 /* Стили для страницы "О нас" */
 .about {
-    margin-top: 15vh;
+    margin-top: 5vh;
     padding: 20px;
     text-align: center;
     background-color: #17171b;
@@ -168,6 +169,7 @@
     text-align: center;
     background-color: #3a3a5a;
     margin-bottom: 20vh;
+    margin-top: 5vh;
 }
 
 .contact__title {
