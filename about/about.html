@@ -30,9 +30,15 @@
         <div id="map" class="about__map"></div>
     </section>
 
-    <footer class="footer">
-        <p class="footer__text">© 2025 Магазин Компьютеров | Все права защищены</p>
-    </footer>
+    <div id="footer"></div>
+
+    <script>
+        fetch('../footer/footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer').innerHTML = data;
+            });
+    </script>
 
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
     <script>

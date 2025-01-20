@@ -41,9 +41,15 @@
     <script src="product.js"></script>
     <script src="./products/products.js"></script>
 
-    <footer class="footer">
-        <p class="footer__text">© 2025 Магазин Компьютеров | Все права защищены</p>
-    </footer>
+    <div id="footer"></div>
+
+    <script>
+        fetch('../footer/footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer').innerHTML = data;
+            });
+    </script>
 </body>
 
 </html>
